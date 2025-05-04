@@ -2,6 +2,8 @@
 
 A Firefox extension that enhances your Google search experience by adding a Stremio button next to IMDb links, allowing you to open movies and TV series in Stremio with a single click.
 
+![320105](https://github.com/user-attachments/assets/24584117-6185-4d01-a0df-5a7fdc549815)
+
 ## Overview
 
 Stremio Movie Search seamlessly integrates with Google search results, adding a Stremio icon next to IMDb links for movies and TV series. Click the icon to launch the Stremio app and stream content directly, whether it's a blockbuster film or a multi-season series. The extension supports dynamic search results and works instantly, even from address bar searches.
