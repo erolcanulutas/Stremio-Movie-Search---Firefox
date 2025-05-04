@@ -43,8 +43,6 @@ Stremio Movie Search seamlessly integrates with Google search results, adding a 
    - For TV series, it will display season and episode selectors (if supported by Stremio add-ons).
 4. Enjoy streaming directly from your search results!
 
-## Development
-
 ### File Structure
 ```
 stremio-movie-search/
@@ -54,12 +52,3 @@ stremio-movie-search/
 └── icons/
     └── stremio.png     # Custom IMDb-Stremio fused icon (96x96px)
 ```
-
-### Building
-1. Ensure all files are in the root directory as shown above.
-2. Edit `manifest.json` and replace the placeholder UUID under `browser_specific_settings.gecko.id` with your own unique ID (e.g., `{your-unique-uuid}`) obtained from the Firefox Add-ons Marketplace after your first submission.
-3. Create a ZIP file:
-   ```
-   zip -r stremio-movie-search-v1.4.zip manifest.json content.js background.js icons/
-   ```
-4. Submit the ZIP to the Firefox Add-ons Marketplace via the Developer Hub.
