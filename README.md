@@ -13,7 +13,6 @@ Stremio Movie Search seamlessly integrates with Google search results, adding a 
 - Supports both movies and TV series with accurate deep links.
 - Lightweight and fast, with minimal permissions.
 - Works on dynamic search results and address bar searches.
-- Custom icon fusing IMDb and Stremio branding for a unique look.
 
 ## Installation
 
