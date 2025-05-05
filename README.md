@@ -24,7 +24,7 @@ Stremio Movie Search seamlessly integrates with Google search results, adding a 
 ### Local Testing (Developers)
 1. Clone this repository:
    ```
-   git clone https://github.com/erolcanulutas/StremioMovieSearch.git
+   git clone https://github.com/erolcanulutas/Stremio-Movie-Search---Firefox.git
    ```
 2. Open Firefox and go to `about:debugging#/runtime/this-firefox`.
 3. Click "Load Temporary Add-on" and select the `manifest.json` file from the cloned directory.
