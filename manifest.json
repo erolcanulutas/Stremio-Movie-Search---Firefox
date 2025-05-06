@@ -1,11 +1,10 @@
 {
   "manifest_version": 2,
   "name": "Stremio Movie Search",
-  "version": "1.2",
-  "description": "Stremio Movie Search enhances your Google movie and TV searches by adding a Stremio icon next to IMDb links. With one click, you can jump straight to the Stremio app to stream your favorite movies or browse seasons and episodes of TV series. Whether you’re searching for a blockbuster film or a binge-worthy show, this extension makes it seamless to access Stremio’s content directly from your browser.",
+  "version": "1.5",
+  "description": "Stremio Movie Search enhances your Google movie and TV searches by adding a Stremio icon next to IMDb links. With one click, you can jump straight to the Stremio app or web to stream your favorite movies or browse seasons and episodes of TV series.",
   "permissions": [
-    "activeTab",
-    "https://v3-cinemeta.strem.io/*"
+    "storage"
   ],
   "content_scripts": [
     {
@@ -21,9 +20,16 @@
   "icons": {
     "96": "icons/stremio.png"
   },
+  "web_accessible_resources": [
+    "icons/stremio.png"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
   "browser_specific_settings": {
     "gecko": {
-      "id": "{UUID}"
+      "id": "{64b29e50-64c6-402e-9c7b-71faadd6f2a6}"
     }
   }
 }
