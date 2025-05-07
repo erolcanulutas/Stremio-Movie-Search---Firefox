@@ -54,5 +54,5 @@ stremio-movie-search-firefox/
 ├── options.html         # Settings page for app/web toggle
 ├── options.js           # Script for handling settings
 └── icons/
-    └── stremio.png      # Custom IMDb-Stremio fused icon (96x96px)
+    └── stremio.png      # Stremio icon (96x96px)
 ```
