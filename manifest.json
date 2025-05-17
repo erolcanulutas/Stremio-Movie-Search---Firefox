@@ -1,14 +1,19 @@
 {
   "manifest_version": 2,
   "name": "Stremio Movie Search",
-  "version": "1.5",
-  "description": "Stremio Movie Search enhances your Google movie and TV searches by adding a Stremio icon next to IMDb links. With one click, you can jump straight to the Stremio app or web to stream your favorite movies or browse seasons and episodes of TV series.",
+  "version": "1.6",
+  "description": "Stremio Movie Search enhances your Google search, IMDb, and Trakt.tv experience by adding a Stremio icon next to movie/show titles. With one click, you can jump straight to the Stremio app or web to stream your favorite content.",
   "permissions": [
     "storage"
   ],
   "content_scripts": [
     {
-      "matches": ["*://www.google.com/search*"],
+      "matches": [
+        "*://www.google.com/search*",
+        "*://www.imdb.com/title/*",
+        "*://trakt.tv/movies/*",
+        "*://trakt.tv/shows/*"
+      ],
       "js": ["content.js"],
       "run_at": "document_end"
     }
@@ -29,7 +34,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "{UUID}"
+      "id": "{64b29e50-64c6-402e-9c7b-71faadd6f2a6}"
     }
   }
 }
