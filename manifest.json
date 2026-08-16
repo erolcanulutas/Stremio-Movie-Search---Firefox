@@ -1,19 +1,34 @@
 {
   "manifest_version": 3,
   "name": "Stremio Movie Search",
-  "version": "1.8",
+  "version": "1.9",
   "description": "Stremio Movie Search enhances your Google, DuckDuckGo, IMDb, and Trakt.tv experience by adding a Stremio icon next to movie/show titles. With one click, you can jump straight to the Stremio app or web to stream your favorite content.",
   "permissions": [
     "storage"
+  ],
+  "host_permissions": [
+    "https://v3-cinemeta.strem.io/*"
   ],
   "content_scripts": [
     {
       "matches": [
         "*://www.google.com/search*",
+        "*://www.google.com.tr/search*",
+        "*://www.google.co.uk/search*",
+        "*://www.google.de/search*",
+        "*://www.google.fr/search*",
+        "*://www.google.nl/search*",
+        "*://www.google.es/search*",
+        "*://www.google.it/search*",
+        "*://www.google.ca/search*",
+        "*://www.google.com.au/search*",
         "*://duckduckgo.com/*",
         "*://www.imdb.com/title/*",
         "*://trakt.tv/movies/*",
-        "*://trakt.tv/shows/*"
+        "*://trakt.tv/shows/*",
+        "*://www.trakt.tv/movies/*",
+        "*://www.trakt.tv/shows/*",
+        "*://app.trakt.tv/*"
       ],
       "js": ["content.js"],
       "run_at": "document_end"
@@ -23,7 +38,7 @@
     "scripts": ["background.js"]
   },
   "icons": {
-    "96": "icons/stremio.png"
+    "96": "icons/stremdb.png"
   },
   "web_accessible_resources": [
     {
@@ -36,8 +51,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "{UUID}"
+      "id": "{64b29e50-64c6-402e-9c7b-71faadd6f2a6}"
     }
   }
-
 }
